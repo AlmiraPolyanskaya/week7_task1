@@ -1,18 +1,16 @@
 .container * {
     text-align: center;
     font-family: Verdana, "Geneva", Tahoma, sans-serif;
-    font-size: large;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .container {
-    border-width: 1px;
-    border-style: solid;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 90px 1fr 120px;
+    grid-template-rows: 12% 1fr 17%;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     grid-template-areas:
         "header header"
         "main sidebar"
@@ -43,16 +41,16 @@ footer {
 }
 
 .article {
-    height: 40px;
-    padding-top: 15px;
-    margin-right: 10px;
+    height: 80%;
+    padding: 20px 0 3px;
+    margin: 0 10px;
     background-color: #FEEAB9;
 }
 
 .articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     align-items: end;
     gap: 20px;
@@ -66,15 +64,18 @@ footer {
 
 .nav_footer {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
     background-color: #E0E0E0;
+    
 }
 
 .nav_footer_item {
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 2%;
+    padding: 20px 1%;
     text-decoration: none;
     color: black;
     background-color: white;
+    font-size: 0.8rem;
 }
