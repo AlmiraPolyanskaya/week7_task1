@@ -64,11 +64,12 @@ footer {
     }
 
     .nav_footer {
-        display: flex;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         align-content: center;
         background-color: #E0E0E0;
+        gap: 3%;
     }
     
     .nav_footer_item {
@@ -115,6 +116,7 @@ footer {
         grid-template-rows: 1fr 1fr;
         align-content: center;
         background-color: #E0E0E0;
+        gap: 3%;
     }
     
     .nav_footer_item {
@@ -147,10 +149,23 @@ footer {
     }
 
     .sidebar {
-        height: 10%;
+        display: none;
     }
 
     .nav_footer {
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        background-color: #E0E0E0;
+    }
+
+    .nav_footer_item {
+        margin: 20px 2%;
+        padding: 20px 1%;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-size: 0.8rem;
     }
 }
